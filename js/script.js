@@ -1,4 +1,17 @@
 // ============================================
+// Page Loader
+// ============================================
+
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.page-loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 800);
+    }
+});
+
+// ============================================
 // Hamburger Menu Toggle
 // ============================================
 
@@ -43,12 +56,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const offset = 80;
+            const targetPosition = target.offsetTop - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
+});
+
+// ============================================
+// Scroll Progress Bar
+// ============================================
+
+window.addEventListener('scroll', function() {
+    const scrollProgress = document.querySelector('.scroll-progress');
+    if (scrollProgress) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercentage = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = scrollPercentage + '%';
+    }
 });
 
 // ============================================
@@ -58,40 +87,86 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        navbar.classList.remove('scrolled');
+    }
+    
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
     }
 });
 
 // ============================================
-// Animate Elements on Scroll (Optional)
+// Back to Top Button
 // ============================================
 
-const observerOptions = {
-    threshold: 0.1,
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+// ============================================
+// Scroll Reveal Animations
+// ============================================
+
+const revealObserverOptions = {
+    threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
+const revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, observerOptions);
+}, revealObserverOptions);
 
 // Observe cards and sections for animation
 document.addEventListener('DOMContentLoaded', function() {
-    const animateElements = document.querySelectorAll('.service-card, .info-card, .testimonial-card, .feature, .review-card');
+    const animateElements = document.querySelectorAll('.service-card, .info-card, .testimonial-card, .feature, .review-card, .service-detail-card, .value-card, .faq-item');
     
-    animateElements.forEach(element => {
+    animateElements.forEach((element, index) => {
         element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(element);
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = `opacity 0.8s ease ${index * 0.1}s, transform 0.8s ease ${index * 0.1}s`;
+        revealObserver.observe(element);
     });
+});
+
+// ============================================
+// Parallax Effect for Hero
+// ============================================
+
+let ticking = false;
+window.addEventListener('scroll', function() {
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            const hero = document.querySelector('.hero');
+            if (hero && window.scrollY < window.innerHeight) {
+                const scrolled = window.pageYOffset;
+                const parallaxSpeed = 0.4;
+                hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+            }
+            ticking = false;
+        });
+        ticking = true;
+    }
 });
 
 // ============================================
