@@ -37,6 +37,16 @@ body {
     color: var(--text-dark);
     overflow-x: hidden;
     position: relative;
+    background: repeating-linear-gradient(
+        45deg,
+        #dc143c 0px,
+        #dc143c 20px,
+        #ffffff 20px,
+        #ffffff 40px,
+        #0047ab 40px,
+        #0047ab 60px
+    );
+    background-attachment: fixed;
 }
 
 /* Loading Animation */
@@ -421,6 +431,8 @@ ul {
 .quick-info {
     padding: 3rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .info-grid {
@@ -532,6 +544,8 @@ ul {
 .featured-services {
     padding: 5rem 0;
     background-color: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .services-grid {
@@ -612,6 +626,8 @@ ul {
 .why-choose-us {
     padding: 5rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .features-grid {
@@ -647,6 +663,8 @@ ul {
 .testimonials-preview {
     padding: 5rem 0;
     background-color: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .testimonials-grid {
@@ -712,6 +730,7 @@ ul {
     color: var(--white);
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .cta-section::before {
@@ -833,6 +852,8 @@ ul {
     color: var(--white);
     padding: 4rem 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .page-header h1 {
@@ -852,6 +873,8 @@ ul {
 .services-detail {
     padding: 5rem 0;
     background-color: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .services-detail-grid {
@@ -919,6 +942,8 @@ ul {
 .service-features-section {
     padding: 5rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 /* ============================================
@@ -927,6 +952,9 @@ ul {
 
 .about-content {
     padding: 5rem 0;
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .about-intro {
@@ -1069,6 +1097,8 @@ ul {
 .reviews-section {
     padding: 5rem 0;
     background-color: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .rating-summary {
@@ -1143,6 +1173,8 @@ ul {
 .review-highlights {
     padding: 5rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .highlights-grid {
@@ -1180,6 +1212,8 @@ ul {
 .contact-section {
     padding: 5rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .contact-grid {
@@ -1296,6 +1330,8 @@ ul {
 .faq-section {
     padding: 5rem 0;
     background-color: var(--light-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .faq-grid {
@@ -1325,6 +1361,8 @@ ul {
 .directions-section {
     padding: 5rem 0;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .directions-grid {
