@@ -40,12 +40,19 @@ body {
     background: repeating-linear-gradient(
         -45deg,
         #dc143c 0px,
-        #dc143c 25px,
-        #ffffff 25px,
-        #ffffff 50px,
-        #0047ab 50px,
-        #0047ab 75px
+        #dc143c 30px,
+        #ffffff 30px,
+        #ffffff 60px,
+        #0047ab 60px,
+        #0047ab 90px
     );
+    background-size: 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
+}
+
+@keyframes barberPoleRotate {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
 }
 
 /* Loading Animation */
@@ -429,16 +436,18 @@ ul {
 
 .quick-info {
     padding: 3rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -551,16 +560,18 @@ ul {
 
 .featured-services {
     padding: 5rem 0;
-    background: linear-gradient(rgba(244, 246, 249, 0.95), rgba(244, 246, 249, 0.95)),
+    background: linear-gradient(rgba(244, 246, 249, 0.88), rgba(244, 246, 249, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -642,16 +653,18 @@ ul {
 
 .why-choose-us {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -688,16 +701,18 @@ ul {
 
 .testimonials-preview {
     padding: 5rem 0;
-    background: linear-gradient(rgba(244, 246, 249, 0.95), rgba(244, 246, 249, 0.95)),
+    background: linear-gradient(rgba(244, 246, 249, 0.88), rgba(244, 246, 249, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -907,16 +922,18 @@ ul {
 
 .services-detail {
     padding: 5rem 0;
-    background: linear-gradient(rgba(244, 246, 249, 0.95), rgba(244, 246, 249, 0.95)),
+    background: linear-gradient(rgba(244, 246, 249, 0.88), rgba(244, 246, 249, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -985,16 +1002,18 @@ ul {
 
 .service-features-section {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1005,16 +1024,18 @@ ul {
 
 .about-content {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1158,16 +1179,18 @@ ul {
 
 .reviews-section {
     padding: 5rem 0;
-    background: linear-gradient(rgba(244, 246, 249, 0.95), rgba(244, 246, 249, 0.95)),
+    background: linear-gradient(rgba(244, 246, 249, 0.88), rgba(244, 246, 249, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1243,16 +1266,18 @@ ul {
 
 .review-highlights {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1291,16 +1316,18 @@ ul {
 
 .contact-section {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1418,16 +1445,18 @@ ul {
 
 .faq-section {
     padding: 5rem 0;
-    background: linear-gradient(rgba(244, 246, 249, 0.95), rgba(244, 246, 249, 0.95)),
+    background: linear-gradient(rgba(244, 246, 249, 0.88), rgba(244, 246, 249, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
@@ -1458,16 +1487,18 @@ ul {
 
 .directions-section {
     padding: 5rem 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
                 repeating-linear-gradient(
                     -45deg,
                     #dc143c 0px,
-                    #dc143c 25px,
-                    #ffffff 25px,
-                    #ffffff 50px,
-                    #0047ab 50px,
-                    #0047ab 75px
+                    #dc143c 30px,
+                    #ffffff 30px,
+                    #ffffff 60px,
+                    #0047ab 60px,
+                    #0047ab 90px
                 );
+    background-size: 100% 100%, 200% 200%;
+    animation: barberPoleRotate 20s linear infinite;
     position: relative;
     z-index: 1;
 }
