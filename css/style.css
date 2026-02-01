@@ -1652,3 +1652,168 @@ ul {
         padding: 1.5rem;
     }
 }
+/* ============================================
+   Price Lists Section
+   ============================================ */
+
+.price-lists-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.price-lists-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(123, 44, 191, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.price-lists-section .section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.price-lists-section .section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.price-lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+    position: relative;
+}
+
+.price-list-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+    position: relative;
+}
+
+.price-list-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.price-list-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.price-list-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.05) 10px,
+        rgba(255, 255, 255, 0.05) 20px
+    );
+    animation: barberStripes 20s linear infinite;
+}
+
+.price-list-header.women {
+    background: linear-gradient(135deg, #ec4899 0%, #d946a6 100%);
+}
+
+@keyframes barberStripes {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+
+.price-list-header h3 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.price-list-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.price-list-image-container {
+    padding: 2rem;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-list-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.price-list-card:hover .price-list-image {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Price Lists */
+@media screen and (max-width: 1024px) {
+    .price-lists-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .price-lists-section {
+        padding: 4rem 0;
+    }
+    
+    .price-lists-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .price-lists-section .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .price-list-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .price-list-header {
+        padding: 1.5rem;
+    }
+    
+    .price-list-image-container {
+        padding: 1rem;
+    }
+}
